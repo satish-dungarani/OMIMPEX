@@ -34,6 +34,7 @@ Phase 1 delivers the technical foundation for a dynamic business website and adm
    - `supabase/migrations/20260406_phase14_value_added_features.sql`
 5. Optionally run seed SQL:
    - `supabase/seed/001_initial_seed.sql`
+   - `supabase/seed/002_dummy_data.sql` (10-15 sample records across modules)
 6. Create storage bucket for media uploads:
    - Bucket name: `media-library`
    - Access: public (for company logo and frontend media)
@@ -47,7 +48,6 @@ Phase 1 delivers the technical foundation for a dynamic business website and adm
      - `supabase secrets set RESEND_API_KEY=... --project-ref <your-project-ref>`
    - Optional secrets:
      - `MAIL_FROM`
-     - `RECAPTCHA_SECRET_KEY`
 9. Start local development:
    - `npm run dev`
 
